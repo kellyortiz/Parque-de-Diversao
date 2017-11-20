@@ -1,0 +1,16 @@
+update responsavel set nomeResponsavel= "Leona" where codResponsavel = 51;
+
+update brinquedo set nomeBrinquedo= "Toboaga" where codbrinquedo = 24;
+update brinquedo set capacidade= 21 where codbrinquedo = 25;
+
+update Crianca set codResponsavel= 52 where codCrianca = 31;
+update Crianca set nomeCrianca= "Pietro" where codCrianca = 32;
+update Crianca set idadeCrianca= 13 where codCrianca = 33;
+update Crianca set alturaCrianca= 150 where codCrianca = 34;
+
+update cargo set nomeCargo="Segurança" where codCargo = 5;
+
+update funcionario set codCargo= 5 where codFuncionario = 11;
+update funcionario set codbrinquedo= 24 where codFuncionario = 13;
+update funcionario set nomeFuncionario= "Isaia" where codFuncionario = 14;
+update funcionario set sexo= "M" where codFuncionario = 15;

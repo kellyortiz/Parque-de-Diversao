@@ -1,0 +1,59 @@
+create table responsavel (
+  codResponsavel integer unsigned not null auto_increment,
+  nomeResponsavel varchar(50 null,
+primary key(codResponsavel));
+
+create table cargo (
+  codCargo integer unsigned not null auto_increment,
+  nomeCargo varchar (50)  null,
+primary key (codCargo));
+
+create table brinquedo (
+  codbrinquedo integer unsigned not null auto_increment,
+  nomeBrinquedo varchar (50) null,,
+  capacidade integer unsigned null,
+primary key (codbrinquedo));
+
+create table Crianca (
+  codCrianca integer unsigned not null auto_increment,
+  codResponsavel integer unsigned not null,
+  nomeCrianca varchar (50) null,,
+  idadeCrianca integer unsigned null,
+  alturaCrianca integer unsigned null,    ,
+  primary key (codCrianca),
+  foreign key(codResponsavel)
+    references responsavel(codResponsavel)
+      on delete cascade
+      on update cascade);
+
+create table funcionario (
+  codFuncionario integer unsigned not null auto_increment,
+  codCargo integer unsigned not null,,
+  codbrinquedo integer unsigned not null,
+  nomeFuncionario varchar (50)  null,
+  sexo varchar (1)  null,
+primary key (codFuncionario),
+  foreign key (codbrinquedo)
+    references brinquedo(codbrinquedo)
+      on delete cascade
+      on update cascade,
+  foreign key (codCargo)
+    references cargo(codCargo)
+      on delete cascade
+      on update cascade);
+
+
+
+create table criancaUsaBrinquedo (
+  codCrianca integer unsigned not null,
+  codbrinquedo integer unsigned not null,
+  ticket integer20) unsigned null,
+primary key (codCrianca, codbrinquedo)  ,
+  foreign key (codCrianca)
+    references Crianca(codCrianca)
+      on delete no action
+      on delete no action,
+  foreign key (codbrinquedo)
+    references brinquedo(codbrinquedo)
+      on delete no action
+      on delete no action);

@@ -1,0 +1,7 @@
+delete from criancausabrinquedo where codbrinquedo=23;
+delete from criancausabrinquedo where CodCrianca= 34;
+delete from brinquedo where codbrinquedo =  23;
+delete from responsavel where codResponsavel = 53;
+delete from Crianca where codCrianca = 34  ;
+delete from cargo where codCargo= 2 ;
+delete from funcionario where codFuncionario = 12;
