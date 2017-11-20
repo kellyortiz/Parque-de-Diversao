@@ -32,3 +32,11 @@ O projeto deverá ser entregue impresso contendo:
 •	itens (e) em imagem, (f) e (g) relacionados anteriormente
 
 O projeto deverá ser instalado e apresentado ao professor funcionando de acordo com o descrito. O artefato apresentado deverá também, além de incluir, poder alterar dados, excluir entidades e localizar entidades.
+
+## Resumo do Projeto
+Com o desenvolvimento e a constante busca de crescimento do setor de entretenimento, as empresas se viram na necessidade de implantar um sistema eficaz que contribui no desenvolvimento das atividades e auxilia também na gestão do controle eficaz. 
+O objetivo principal deste trabalho é expor a importância do controle de um parque de diversão, no crescimento de uma empresa de entretenimento, bem como os transtornos que sua ausência pode causar na entidade. 
+Será controlado: O responsável pela criança, crianças, quando a criança utiliza um ou mais brinquedos, brinquedos, funcionário e cargo do funcionário.
+
+Palavras-chave: Controle, Parque de diversão, Gestão.
+
