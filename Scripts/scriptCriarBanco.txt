@@ -1,6 +1,6 @@
 create table responsavel (
   codResponsavel integer unsigned not null auto_increment,
-  nomeResponsavel varchar(50 null,
+  nomeResponsavel varchar(50) null,
 primary key(codResponsavel));
 
 create table cargo (
@@ -10,16 +10,16 @@ primary key (codCargo));
 
 create table brinquedo (
   codbrinquedo integer unsigned not null auto_increment,
-  nomeBrinquedo varchar (50) null,,
+  nomeBrinquedo varchar (50) null,
   capacidade integer unsigned null,
 primary key (codbrinquedo));
 
 create table Crianca (
   codCrianca integer unsigned not null auto_increment,
   codResponsavel integer unsigned not null,
-  nomeCrianca varchar (50) null,,
+  nomeCrianca varchar (50) null,
   idadeCrianca integer unsigned null,
-  alturaCrianca integer unsigned null,    ,
+  alturaCrianca integer unsigned null,    
   primary key (codCrianca),
   foreign key(codResponsavel)
     references responsavel(codResponsavel)
@@ -28,7 +28,7 @@ create table Crianca (
 
 create table funcionario (
   codFuncionario integer unsigned not null auto_increment,
-  codCargo integer unsigned not null,,
+  codCargo integer unsigned not null,
   codbrinquedo integer unsigned not null,
   nomeFuncionario varchar (50)  null,
   sexo varchar (1)  null,
@@ -51,9 +51,7 @@ create table criancaUsaBrinquedo (
 primary key (codCrianca, codbrinquedo)  ,
   foreign key (codCrianca)
     references Crianca(codCrianca)
-      on delete no action
-      on delete no action,
+      on delete no action,
   foreign key (codbrinquedo)
     references brinquedo(codbrinquedo)
-      on delete no action
-      on delete no action);
+       on delete no action);
